@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './components/App';
 import { firebase } from './firebase';
-console.log(firebase);
+import { BrowserRouter } from 'react-router-dom';
+console.log(authService);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App />
+  <BrowserRouter>
+      <App />
+  </BrowserRouter>
+
 );
 
